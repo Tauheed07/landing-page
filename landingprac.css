@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    width: 90%;
+    margin: 60px auto;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    padding: 0px 80px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px 1px black;
+    font-family: Raleway;
+}
+.navbar .logo{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nav_list{
+    display:flex;
+}
+.nav_item{
+    margin: 0px 20px;
+    width: max-content;
+    font-size: 1.5rem;
+}
+.nav_link:hover{
+    color: #F24A72;
+}
+.links :hover{
+    color: #F24A72;
+}
+.nav_icon{
+    display:  none;
+}
+.home_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.home_content > div{
+    height: calc(100vh - 60px);
+    padding: 20px 0 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Raleway;
+}
+.home_content .content{
+    width: 45%;
+}
+.home_content .img{
+    width: 55%
+}
+.hello{
+    font-size: 2.5rem;
+}
+.description{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.explore{
+    width: 170px;
+    font-size: 1.5rem;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #F24A72;
+}
+.home_content img{
+    width: 90%;
+}
+.content > *{
+    margin: 20px 10px;
+}
+.bx {
+    font-size: 2.25rem;
+    padding: 5px;
+    color: black;
+}
+.social_links hr{
+    width: 150px;
+    height: 4px;
+    background-color: black;
+}
+@media screen and (max-width: 900px){
+    .container{ 
+        width:100%;
+}
+@media screen and (max-width: 768px){
+    .home_content{
+        flex-direction: column-reverse;
+    }
+    .home_content div{
+        height: max-content;
+        align-items: center;
+        padding: 30px 30px;
+    }
+    .home_content .content{
+        width: 100%;
+    }
+    .home_content .img{
+        width: 100%;
+    }
+    .description{
+        text-align: center;
+    }
+    .navbar{
+        padding: 0px 10px;
+    }
+    .nav_menu{
+        position: fixed;
+        right: -255px;
+        top: 60px;
+    }
+    .nav_list{
+        display: block;
+        height:  calc(100vh - 60px);
+        width: 250px;
+        background: white;
+        box-shadow: 0 0 5px 1px black;
+    }
+    .nav_item{
+        padding: 10px 0px;
+    }
+    .nav_icon{
+        display: block;
+        cursor: pointer;
+    }
+}
